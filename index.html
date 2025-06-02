@@ -1,172 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dahlia Seller Feedback</title>
+  <meta charset="UTF-8">
+  <title>Dahlia Seller Farm Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 2em;
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.6;
-    }
-    label {
-      font-weight: bold;
-    }
-    textarea, input, select {
-      width: 100%;
-      margin-top: 4px;
-      margin-bottom: 16px;
-    }
-    .hidden {
-      display: none;
-    }
-    .section {
-      border-top: 1px solid #ccc;
-      margin-top: 32px;
-      padding-top: 16px;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
   </style>
 </head>
 <body>
-  <h1>Dahlia Seller Feedback</h1>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-    <!-- Name / Email -->
-    <label>Your Name:</label>
-    <input type="text" name="name" required>
+  <h1>Dahlia Seller / Farm Reviews</h1>
 
-    <label>Your Email:</label>
-    <input type="email" name="email" required>
+  <div class='tableauPlaceholder' id='viz1748884171872' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Dahlia Seller/Farm Reviews' 
+             src='https://public.tableau.com/static/images/Da/DahliaSellerReviews/DahliaSellerFarmReviews/1_rss.png' 
+             style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> 
+      <param name='site_root' value='' />
+      <param name='name' value='DahliaSellerReviews/DahliaSellerFarmReviews' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Da/DahliaSellerReviews/DahliaSellerFarmReviews/1.png' /> 
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>                
 
-    <label>Location (State/Country):</label>
-    <input type="text" name="location">
-
-    <!-- Farm name -->
-    <label>What farm did you order from?</label>
-    <select name="farm" id="farmDropdown">
-      <option value="">-- Select a Farm --</option>
-      <option value="Johnny's">Johnny's</option>
-      <option value="Swan Island Dahlias">Swan Island Dahlias</option>
-      <option value="Bear Creek Farm">Bear Creek Farm</option>
-      <option value="Other">Other (not listed)</option>
-    </select>
-
-    <div id="newFarmFields" class="hidden">
-      <label>New Farm Name:</label>
-      <input type="text" name="newFarm">
-
-      <label>Name of the person you corresponded with (optional):</label>
-      <input type="text" name="contactPerson">
-    </div>
-
-    <!-- Order type -->
-    <label>What did you order?</label>
-    <input type="checkbox" name="orderType" value="Cuttings"> Cuttings<br>
-    <input type="checkbox" name="orderType" value="Tubers"> Tubers<br>
-    <input type="checkbox" name="orderType" value="Other"> Other<br>
-
-    <!-- Would order again? -->
-    <label>Would you order from this farm again?</label>
-    <select name="wouldOrderAgain" id="wouldOrderAgain">
-      <option value="">-- Select --</option>
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select>
-
-    <!-- Negative Experience Section -->
-    <div id="negativeSection" class="hidden section">
-      <label>What issues did you experience with your cuttings?</label><br>
-      <input type="checkbox" name="cuttingIssue" value="Slow arrival"> Slow arrival<br>
-      <input type="checkbox" name="cuttingIssue" value="Dead on arrival"> Dead on arrival<br>
-      <input type="checkbox" name="cuttingIssue" value="Sick looking"> Sick looking<br>
-      <input type="checkbox" name="cuttingIssue" value="Pests"> Came with pests<br>
-      <input type="checkbox" name="cuttingIssue" value="Mislabeled"> Mislabeled<br>
-      <input type="checkbox" name="cuttingIssue" value="Other"> Other<br>
-
-      <label>If other, please explain:</label>
-      <textarea name="cuttingIssueOther" rows="3"></textarea>
-
-      <label>Was the farm responsive? (Responded within 48–72 hours and offered a resolution)</label>
-      <select name="farmResponsive" id="farmResponsive">
-        <option value="">-- Select --</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-        <option value="No response">No response</option>
-      </select>
-
-      <div id="noResponseFollowUp" class="hidden">
-        <label>If not responsive, how many times did you follow up?</label>
-        <input type="number" name="followUpAttempts" min="0">
-      </div>
-
-      <label>How did they remedy the issue?</label>
-      <select name="issueRemedy">
-        <option value="">-- Select --</option>
-        <option value="No remedy">No remedy</option>
-        <option value="No response">No response</option>
-        <option value="Refund">Refund</option>
-        <option value="New cuttings">New cuttings</option>
-      </select>
-
-      <label>How was the packaging?</label>
-      <select name="packaging">
-        <option value="">-- Select --</option>
-        <option value="Adequate">Adequate</option>
-        <option value="Inadequate">Inadequate (heat/cold/physical damage)</option>
-        <option value="Other">Other</option>
-      </select>
-
-      <label>What do you want others to know about this farm?</label>
-      <textarea name="publicNote" rows="4" placeholder="Optional"></textarea>
-    </div>
-
-    <!-- Positive Section -->
-    <div id="positiveSection" class="hidden section">
-      <label>What did you order?</label>
-      <input type="checkbox" name="positiveOrderType" value="Cuttings"> Cuttings<br>
-      <input type="checkbox" name="positiveOrderType" value="Tubers"> Tubers<br>
-      <input type="checkbox" name="positiveOrderType" value="Other"> Other<br>
-
-      <label>What time of year did you order?</label>
-      <input type="text" name="orderTime" placeholder="e.g. Early March, Spring 2024">
-
-      <label>What made this farm great?</label>
-      <textarea name="positiveNotes" rows="3"></textarea>
-
-      <label>How many times have you ordered from them?</label>
-      <input type="number" name="repeatOrders" min="1">
-    </div>
-
-    <button type="submit">Submit Feedback</button>
-  </form>
-
-  <script>
-    const farmDropdown = document.getElementById("farmDropdown");
-    const newFarmFields = document.getElementById("newFarmFields");
-    const wouldOrderAgain = document.getElementById("wouldOrderAgain");
-    const negativeSection = document.getElementById("negativeSection");
-    const positiveSection = document.getElementById("positiveSection");
-    const farmResponsive = document.getElementById("farmResponsive");
-    const noResponseFollowUp = document.getElementById("noResponseFollowUp");
-
-    farmDropdown.addEventListener("change", () => {
-      newFarmFields.classList.toggle("hidden", farmDropdown.value !== "Other");
-    });
-
-    wouldOrderAgain.addEventListener("change", () => {
-      const isNo = wouldOrderAgain.value === "No";
-      negativeSection.classList.toggle("hidden", !isNo);
-      positiveSection.classList.toggle("hidden", isNo);
-    });
-
-    farmResponsive.addEventListener("change", () => {
-      const show = farmResponsive.value === "No" || farmResponsive.value === "No response";
-      noResponseFollowUp.classList.toggle("hidden", !show);
-    });
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1748884171872');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width='1000px';
+      vizElement.style.height='2427px';
+    } else if (divElement.offsetWidth > 500) {
+      vizElement.style.width='1000px';
+      vizElement.style.height='2427px';
+    } else {
+      vizElement.style.width='100%';
+      vizElement.style.height='2527px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
   </script>
+
 </body>
 </html>
-
