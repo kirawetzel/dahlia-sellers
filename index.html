@@ -4,24 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dahlia Seller Reviews</title>
-     <!-- Note -->
-    <div class="form-note">
-      Please consider taking 3–4 minutes to complete the form. Without your responses, there will be no data.
-    </div>
-
-    <!-- Google Form Embed -->
-    <details>
-      <summary>📝 Submit your dahlia farm review (click to open)</summary>
-      <div class="embed-container">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfruV3lB7dCvNlm4yDLWoVxbWLG9eGAnS9Bh_sjGGYfhgSAvQ/viewform?embedded=true"
-          height="1500" frameborder="0" marginheight="0" marginwidth="0">
-          Loading…
-        </iframe>
-      </div>
-    </details>
-  </div>
-  
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -59,6 +41,10 @@
       font-weight: bold;
       cursor: pointer;
       margin-bottom: 1rem;
+      line-height: 3rem; /* Makes the collapsed summary taller */
+      min-height: 5rem;  /* Ensures enough vertical space */
+      display: flex;
+      align-items: center;
     }
 
     .form-note {
@@ -70,6 +56,24 @@
 </head>
 <body>
   <div class="container">
+
+    <!-- Note -->
+    <div class="form-note">
+      Please consider taking 3–4 minutes to complete the form. Without your responses, there will be no data.
+    </div>
+
+    <!-- Google Form Embed -->
+    <details>
+      <summary>📝 Submit your dahlia farm review (click to expand)</summary>
+      <div class="embed-container">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfruV3lB7dCvNlm4yDLWoVxbWLG9eGAnS9Bh_sjGGYfhgSAvQ/viewform?embedded=true"
+          height="1600" frameborder="0" marginheight="0" marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+    </details>
+
     <!-- Tableau Embed -->
     <div class="embed-container">
       <div class='tableauPlaceholder' id='viz1748884171872' style='position: relative'>
@@ -99,6 +103,7 @@
         </object>
       </div>
     </div>
+  </div>
 
   <!-- Tableau Script -->
   <script type='text/javascript'>
@@ -112,3 +117,4 @@
   </script>
 </body>
 </html>
+
