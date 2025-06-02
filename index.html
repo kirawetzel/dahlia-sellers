@@ -4,119 +4,196 @@
   <meta charset="UTF-8">
   <title>Dahlia Seller Farm Reviews</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      padding: 20px;
-      font-family: sans-serif;
-      background-color: #f8f8f8;
+      font-family: 'Quicksand', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/flower-bed.png') repeat;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    nav {
+      background-color: #d3d3d3;
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    nav h2 {
+      margin: 0;
+      color: #333;
+      font-size: 1.5em;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      background-color: white;
+      border-radius: 20px;
+      padding: 30px;
+      border: 6px solid rgba(200, 200, 200, 0.3);
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
     }
 
     h1 {
-      margin-bottom: 20px;
+      color: #333;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .note {
+      background-color: #eeeeee;
+      border-left: 6px solid #999;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      font-size: 1em;
     }
 
     p {
-      max-width: 800px;
       font-size: 1.1em;
+      line-height: 1.6;
     }
 
     details {
-      max-width: 800px;
-      margin-top: 20px;
-      margin-bottom: 40px;
-      font-size: 1em;
-      background: #fff;
-      border-radius: 8px;
+      background: #f0f0f0;
       padding: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
     }
 
     summary {
+      font-weight: 600;
       cursor: pointer;
-      font-weight: bold;
-      font-size: 1.1em;
-      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: #444;
     }
 
     iframe.google-form {
       width: 100%;
       height: 1500px;
       border: none;
-      display: block;
       margin-top: 20px;
     }
 
     .tableauPlaceholder {
-      max-width: 100%;
+      width: 100% !important;
     }
 
     .tableauViz {
+      width: 100% !important;
+      height: 2527px;
       display: block !important;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+      margin-top: 20px;
+    }
+
+    #backToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #666;
+      color: white;
+      cursor: pointer;
+      padding: 14px 20px;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: opacity 0.3s ease;
+    }
+
+    #backToTopBtn:hover {
+      background-color: #444;
     }
   </style>
 </head>
+
 <body>
+  <nav>
+    <h2>Dahlia Reviews Project</h2>
+  </nav>
 
-  <h1>Dahlia Seller / Farm Reviews</h1>
+  <div class="container">
+    <h1>Dahlia Seller / Farm Reviews</h1>
 
-  <p>
-    Please consider taking 3–4 minutes to complete the form. Without your responses, there will be no data.
-  </p>
+    <div class="note">
+      This is a free project by a member of the dahlia community. We will never ask for money, we will never share data, and we will never remove reviews or data. The data will update <strong>daily</strong>, but because this is a grassroots project, updates to the tool will happen <strong>monthly</strong> at a minimum.
+    </div>
 
-  <details>
-    <summary>📝 Submit your dahlia farm review (click to open)</summary>
-    <iframe class="google-form"
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeHGJxc0qimLNCDvqDXXcKU5cwJxCYILBYYThuf4wzM192AOw/viewform?embedded=true">
-      Loading…
-    </iframe>
-  </details>
+    <p>
+      Please consider taking 3–4 minutes to complete the form. Without your responses, there will be no data.
+    </p>
 
-  <!-- Tableau Embed -->
-  <div class='tableauPlaceholder' id='viz1748884171872' style='position: relative'>
-    <noscript>
-      <a href='#'>
-        <img alt='Dahlia Seller/Farm Reviews' 
-             src='https://public.tableau.com/static/images/Da/DahliaSellerReviews/DahliaSellerFarmReviews/1_rss.png' 
-             style='border: none' />
-      </a>
-    </noscript>
-    <object class='tableauViz' style='display:none;'>
-      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-      <param name='embed_code_version' value='3' /> 
-      <param name='site_root' value='' />
-      <param name='name' value='DahliaSellerReviews/DahliaSellerFarmReviews' />
-      <param name='tabs' value='no' />
-      <param name='toolbar' value='no' />
-      <param name='static_image' value='https://public.tableau.com/static/images/Da/DahliaSellerReviews/DahliaSellerFarmReviews/1.png' /> 
-      <param name='animate_transition' value='yes' />
-      <param name='display_static_image' value='yes' />
-      <param name='display_spinner' value='yes' />
-      <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
-      <param name='language' value='en-US' />
-      <param name='filter' value='publish=yes' />
-    </object>
-  </div> 
+    <details>
+      <summary>📝 Submit your dahlia farm review (click to open)</summary>
+      <iframe class="google-form"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeHGJxc0qimLNCDvqDXXcKU5cwJxCYILBYYThuf4wzM192AOw/viewform?embedded=true">
+        Loading…
+      </iframe>
+    </details>
+
+    <!-- Tableau Embed -->
+    <div class='tableauPlaceholder' id='viz1748884171872'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dahlia Seller/Farm Reviews' 
+               src='https://public.tableau.com/static/images/Da/DahliaSellerReviews/DahliaSellerFarmReviews/1_rss.png' 
+               style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='DahliaSellerReviews/DahliaSellerFarmReviews' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='no' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Da/DahliaSellerReviews/DahliaSellerFarmReviews/1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div> 
+  </div>
+
+  <button onclick="topFunction()" id="backToTopBtn" title="Go to top">⬆ Top</button>
 
   <script type='text/javascript'>
+    // Tableau Script Load
     var divElement = document.getElementById('viz1748884171872');
     var vizElement = divElement.getElementsByTagName('object')[0];
-    if (divElement.offsetWidth > 800) {
-      vizElement.style.width = '1000px';
-      vizElement.style.height = '2427px';
-    } else if (divElement.offsetWidth > 500) {
-      vizElement.style.width = '1000px';
-      vizElement.style.height = '2427px';
-    } else {
-      vizElement.style.width = '100%';
-      vizElement.style.height = '2527px';
-    }
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
 
+    // Back to top
+    window.onscroll = function() { scrollFunction(); };
+    function scrollFunction() {
+      const btn = document.getElementById("backToTopBtn");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    }
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
 
